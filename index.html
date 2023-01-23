@@ -26,12 +26,37 @@
                 <label for="female">Female</label><input type="radio" name="gender" value="female" id="female" required>
                 <br />
                 <br />
-                <label for="contact">Phone no:- </label>
-                <input type="number" name="mobile" id="contact" minlength="10" maxlength="10" required />
+                <label for="contact"><span class="content">Phone no:- </span></label>
+                <input type="text" name="mobile" id="contact" pattern="[0-9]+" minlength="10" maxlength="10" required />
                 <br />
                 <br />
-                <label for="address">Address:- </label>
-                <textarea name="address" id="address" required cols="30" rows="5"></textarea>
+                <label for="email"><span class="content">Email id:- </span></label>
+                <input type="email" name="email" id="email" required />
+                <br />
+                <br />
+                <label for="content"><span class="content">Aadhar No.:- </span></label>
+                <input type="text" name="aadhar" id="content" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" minlength="14" maxlength="14" required />
+                <br />
+                <br />
+                <span class="content">Education:- </span>
+                <label for="10">10th </label>
+                <input type="checkbox" name="education" value="10" id="10" required />
+                <label for="12">12th </label>
+                <input type="checkbox" name="education" value="12" id="12" required />
+                <label for="ug">UG </label>
+                <input type="checkbox" name="education" value="ug" id="ug" required />
+                <label for="pg">PG </label>
+                <input type="checkbox" name="education" value="pg" id="pg" required />
+                <label for="phd">PHD </label>
+                <input type="checkbox" name="education" value="phd" id="phd" required />
+                <br />
+                <br />
+                <label for="city"><span class="content">City:- </span></label>
+                <input type="text" name="city" id="city" required />
+                <br />
+                <br />
+                <label for="address"><span class="content">Address:- </span></label>
+                <textarea name="address" id="address" required cols="30" rows="2"></textarea>
             </form>
     </div>
 </body>
