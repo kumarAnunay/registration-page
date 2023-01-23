@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+</head>
+<body>
+    <div class="container">
+            <form action="./confirmationPage.html" method="get">
+                <label for="firstname"><span class="content">FirstName:- </span></label>
+                <input type="text" name="firstname"  id="firstname" required/>
+                <br />
+                <br />
+                <label for="lastname"><spna class="content">LastName:- </spna></label>
+                <input type="text" name="lastname" id="lastname" required />
+                <br />
+                <br />
+                <label for="dob"><span class="content">Date of Birth:- </span></label>
+                <input type="date" name="dob" id="dob" required />
+                <br />
+                <br />
+                <span class="content">Gender:- </span>
+                <label for="male">Male</label><input type="radio" name="gender" value="male" id="male" required>
+                <label for="female">Female</label><input type="radio" name="gender" value="female" id="female" required>
+                <br />
+                <br />
+                <label for="contact">Phone no:- </label>
+                <input type="number" name="mobile" id="contact" minlength="10" maxlength="10" required />
+                <br />
+                <br />
+                <label for="address">Address:- </label>
+                <textarea name="address" id="address" required cols="30" rows="5"></textarea>
+            </form>
+    </div>
+</body>
+</html>
