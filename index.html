@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
     <div class="container">
-        <form action="./confirmationPage.html" method="get">
+        <form action="./confirmationPage.html" method="post">
             <label for="firstname"><span class="content">First Name:- </span></label>
             <input type="text" name="firstname"  id="firstname" class="mouse-over" required />
             <br />
@@ -17,7 +18,7 @@
             <input type="text" name="lastname" id="lastname" class="mouse-over" required />
             <br />
             <br />
-            <label for="fathers-name"><span class="content">Father's Name:- </span></label>
+            <label for="fathers-name"><span class="content">Father's Name:- </span></label> 
             <input type="text" name="fahersname" id="fathers-name" class="mouse-over" required />
             <br />
             <br />
@@ -29,9 +30,11 @@
             <input type="date" name="dob" id="dob" class="mouse-over" required />
             <br />
             <br />
+            <div class="gender">
             <span class="content">Gender:- </span>
-            <label for="male">Male </label><input type="radio" name="gender" value="male" id="male" class="mouse-over" required />
-            <label for="female">Female </label><input type="radio" name="gender" value="female" id="female" class="mouse-over" required />
+            <label for="male"></label><input type="radio" name="gender" value="male" id="male" class="mouse-over" required />Male 
+            <label for="female"></label><input type="radio" name="gender" value="female" id="female" class="mouse-over" required />Female 
+            </div>
             <br />
             <br />
             <label for="contact"><span class="content">Phone no:- </span></label>
@@ -46,17 +49,19 @@
             <input type="tel" name="aadhar" id="content" class="mouse-over" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" title="Please write as per aadhar card use( - )" minlength="14" maxlength="14" required />
             <br />
             <br />
+            <div class="education">
             <span class="content">Education:- </span>
-            <label for="10">10th </label>
-            <input type="checkbox" name="education" value="10" id="10" class="mouse-over" required />
-            <label for="12">12th </label>
-            <input type="checkbox" name="education" value="12" id="12" class="mouse-over" required />
-            <label for="ug">UG </label>
-            <input type="checkbox" name="education" value="ug" id="ug" class="mouse-over" required />
-            <label for="pg">PG </label>
-            <input type="checkbox" name="education" value="pg" id="pg" class="mouse-over" required />
-            <label for="phd">PHD </label>
-            <input type="checkbox" name="education" value="phd" id="phd" class="mouse-over" required />
+            <label for="10"></label>
+            <input type="checkbox" name="education" value="10" id="10" class="mouse-over" required />10th 
+            <label for="12"></label>
+            <input type="checkbox" name="education" value="12" id="12" class="mouse-over" required />12th 
+            <label for="ug"></label>
+            <input type="checkbox" name="education" value="ug" id="ug" class="mouse-over" required />UG 
+            <label for="pg"></label>
+            <input type="checkbox" name="education" value="pg" id="pg" class="mouse-over" required />PG 
+            <label for="phd"></label>
+            <input type="checkbox" name="education" value="phd" id="phd" class="mouse-over" required />PHD
+            </div> 
             <br />
             <br />
             <label for="address"><span class="content">Address:- </span></label>
@@ -67,12 +72,17 @@
             <input type="text" name="city" id="city" class="mouse-over" required />
             <br />
             <br />
-            <label for="pin-code">PinCode:- </label>
+            <label for="pin-code"><span class="content">PinCode:- </span></label>
             <input type="tel" name="pincode"  id="pin-code" class="mouse-over" minlength="6" maxlength="6" required />
             <br />
             <br />
-            <label for="button"></label>
-            <button type="submit" id="button" class="button">submit</button>
+            <label for="state"><span class="content">State:- </span></label>
+            <input type="text" id="state" class="mouse-over" required />
+            <br />
+            <br />
+            <div class="result">
+                <button type="submit" id="button" class="button">submit</button>
+            </div>
         </form>
     </div>
 </body>
