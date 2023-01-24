@@ -8,56 +8,72 @@
 </head>
 <body>
     <div class="container">
-            <form action="./confirmationPage.html" method="get">
-                <label for="firstname"><span class="content">FirstName:- </span></label>
-                <input type="text" name="firstname"  id="firstname" required/>
-                <br />
-                <br />
-                <label for="lastname"><spna class="content">LastName:- </spna></label>
-                <input type="text" name="lastname" id="lastname" required />
-                <br />
-                <br />
-                <label for="dob"><span class="content">Date of Birth:- </span></label>
-                <input type="date" name="dob" id="dob" required />
-                <br />
-                <br />
-                <span class="content">Gender:- </span>
-                <label for="male">Male</label><input type="radio" name="gender" value="male" id="male" required>
-                <label for="female">Female</label><input type="radio" name="gender" value="female" id="female" required>
-                <br />
-                <br />
-                <label for="contact"><span class="content">Phone no:- </span></label>
-                <input type="text" name="mobile" id="contact" pattern="[0-9]+" minlength="10" maxlength="10" required />
-                <br />
-                <br />
-                <label for="email"><span class="content">Email id:- </span></label>
-                <input type="email" name="email" id="email" required />
-                <br />
-                <br />
-                <label for="content"><span class="content">Aadhar No.:- </span></label>
-                <input type="text" name="aadhar" id="content" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" minlength="14" maxlength="14" required />
-                <br />
-                <br />
-                <span class="content">Education:- </span>
-                <label for="10">10th </label>
-                <input type="checkbox" name="education" value="10" id="10" required />
-                <label for="12">12th </label>
-                <input type="checkbox" name="education" value="12" id="12" required />
-                <label for="ug">UG </label>
-                <input type="checkbox" name="education" value="ug" id="ug" required />
-                <label for="pg">PG </label>
-                <input type="checkbox" name="education" value="pg" id="pg" required />
-                <label for="phd">PHD </label>
-                <input type="checkbox" name="education" value="phd" id="phd" required />
-                <br />
-                <br />
-                <label for="city"><span class="content">City:- </span></label>
-                <input type="text" name="city" id="city" required />
-                <br />
-                <br />
-                <label for="address"><span class="content">Address:- </span></label>
-                <textarea name="address" id="address" required cols="30" rows="2"></textarea>
-            </form>
+        <form action="./confirmationPage.html" method="get">
+            <label for="firstname"><span class="content">First Name:- </span></label>
+            <input type="text" name="firstname"  id="firstname" class="mouse-over" required />
+            <br />
+            <br />
+            <label for="lastname"><spna class="content">Last Name:- </spna></label>
+            <input type="text" name="lastname" id="lastname" class="mouse-over" required />
+            <br />
+            <br />
+            <label for="fathers-name"><span class="content">Father's Name:- </span></label>
+            <input type="text" name="fahersname" id="fathers-name" class="mouse-over" required />
+            <br />
+            <br />
+            <label for="mothers-name"><span class="content">Mother's Name:- </span></label>
+            <input type="text" name="mothersname" id="mothers-name" class="mouse-over" required />
+            <br />
+            <br />
+            <label for="dob"><span class="content">Date of Birth:- </span></label>
+            <input type="date" name="dob" id="dob" class="mouse-over" required />
+            <br />
+            <br />
+            <span class="content">Gender:- </span>
+            <label for="male">Male </label><input type="radio" name="gender" value="male" id="male" class="mouse-over" required />
+            <label for="female">Female </label><input type="radio" name="gender" value="female" id="female" class="mouse-over" required />
+            <br />
+            <br />
+            <label for="contact"><span class="content">Phone no:- </span></label>
+            <input type="tel" name="mobile" id="contact" minlength="10" maxlength="10" class="mouse-over" required />
+            <br />
+            <br />
+            <label for="email"><span class="content">Email id:- </span></label>
+            <input type="email" name="email" id="email" class="mouse-over" required />
+            <br />
+            <br />
+            <label for="content"><span class="content">Aadhar No.:- </span></label>
+            <input type="tel" name="aadhar" id="content" class="mouse-over" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" title="Please write as per aadhar card use( - )" minlength="14" maxlength="14" required />
+            <br />
+            <br />
+            <span class="content">Education:- </span>
+            <label for="10">10th </label>
+            <input type="checkbox" name="education" value="10" id="10" class="mouse-over" required />
+            <label for="12">12th </label>
+            <input type="checkbox" name="education" value="12" id="12" class="mouse-over" required />
+            <label for="ug">UG </label>
+            <input type="checkbox" name="education" value="ug" id="ug" class="mouse-over" required />
+            <label for="pg">PG </label>
+            <input type="checkbox" name="education" value="pg" id="pg" class="mouse-over" required />
+            <label for="phd">PHD </label>
+            <input type="checkbox" name="education" value="phd" id="phd" class="mouse-over" required />
+            <br />
+            <br />
+            <label for="address"><span class="content">Address:- </span></label>
+            <textarea name="address" id="address" class="mouse-over" maxlength="50" required cols="30" rows="2"></textarea>
+            <br />
+            <br />
+            <label for="city"><span class="content">City:- </span></label>
+            <input type="text" name="city" id="city" class="mouse-over" required />
+            <br />
+            <br />
+            <label for="pin-code">PinCode:- </label>
+            <input type="tel" name="pincode"  id="pin-code" class="mouse-over" minlength="6" maxlength="6" required />
+            <br />
+            <br />
+            <label for="button"></label>
+            <button type="submit" id="button" class="button">submit</button>
+        </form>
     </div>
 </body>
 </html>
