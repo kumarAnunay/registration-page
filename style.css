@@ -40,7 +40,7 @@ form{
 
 .mouse-over:hover{
     color: red;
-    background-color: rgb(142, 148, 185);
+    border: 3px solid red;
 }
 
 label {
